@@ -10,7 +10,7 @@ Azure Active Directory (Microsoft Entra ID) is a cloud-based identity and access
 - **Pricing Model**: Azure is free for basics with Premium tiers at $6-9/user/month; AWS IAM is free, but Cognito charges $0.0055 per monthly active user (MAU) beyond the free tier; GCP offers a free edition and Premium at $6/user/month, often bundled with Workspace.
 - **Integration for DevSecOps**: Azure AD integrates with Azure DevOps and GitHub Actions for automated RBAC in CI/CD pipelines; AWS works with CodePipeline and Lambda for access automation; GCP supports Cloud Build and GitHub for identity management in workflows.
 
-## Overall Comparison Table
+### Overall Comparison Table
 | Aspect                  | Azure AD               | AWS IAM + Cognito      | GCP IAM + Cloud Identity |
 |-------------------------|------------------------|------------------------|--------------------------|
 | Core Features           | Conditional access, SAML | Policies, user pools  | SSO, groups              |
@@ -18,7 +18,7 @@ Azure Active Directory (Microsoft Entra ID) is a cloud-based identity and access
 | Pricing Model           | Free basic; $6-9/user/mo | Free IAM; $0.0055/MAU | Free; $6/user/mo premium |
 | Integration for DevSecOps | DevOps RBAC pipelines | CodePipeline access    | Cloud Build identity     |
 
-## Narrative Analysis
+### Conclution
 Azure AD feels like the go-to for handling logins and access in mixed setups, especially with its hybrid support that ties right into stuff like Defender for spotting threats early, just like we talked about in class for SecureCorp. AWS with IAM and Cognito is super flexible if you want to tweak permissions finely, but it might take more setup time, and GCP's IAM plus Cloud Identity keeps things simple for quick workforce access. From a DevSecOps angle, Azure makes automating roles in pipelines a breeze, which saves headaches, though if you're watching pennies for tons of users, AWS could be cheaper—based on what I've seen in 2024 Jit reports, I'd pick Azure unless you're all-in on Google tools.
 
 ## Azure Monitor & Log Analytics
