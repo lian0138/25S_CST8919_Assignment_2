@@ -55,3 +55,16 @@ Azure Sentinel is a cloud-native SIEM and SOAR solution for threat detection, in
 - **Integration for DevSecOps**: Azure uses Logic Apps and Azure DevOps for CI/CD incident response; AWS integrates Step Functions with CodePipeline; GCP supports Eventarc and Cloud Build for automated security workflows.
 
 In summary, Azure's integrated SOAR excels in orchestration, AWS in rapid detection, and GCP in big-data scaling; Azure's AI analytics and DevSecOps compatibility provide strong value for automated responses, as noted in 2024 Varonis and Sysdig SIEM comparisons.
+
+
+## Overall Comparison Table
+| Azure Service          | AWS Equivalent                  | GCP Equivalent                  | Key Difference                  | Security Edge                  | Pricing Note                  | DevSecOps Fit                  |
+|------------------------|---------------------------------|---------------------------------|---------------------------------|--------------------------------|--------------------------------|--------------------------------|
+| Azure AD (SSO, IAM)    | IAM + Cognito                   | IAM + Cloud Identity            | Azure hybrid SSO vs. AWS modular | Azure Defender integration     | Azure tiered ($6-9/user)       | Azure pipeline RBAC            |
+| Monitor & Log Analytics| CloudWatch                      | Operations Suite                | Azure KQL depth vs. GCP AI      | Azure posture links            | Azure $2.30/GB ingest          | Azure CI/CD alerts             |
+| Azure Policy           | Organizations + Config          | Organization Policy             | Azure remediation vs. AWS rules | Azure CSPM                     | Azure free                     | Azure policy-as-code           |
+| Defender for Cloud     | Security Hub + GuardDuty/Inspector | Security Command Center       | Azure CNAPP unity vs. GCP assets| Azure AI scans                 | Azure tiered ($0.02/GB)        | Azure IaC scans                |
+| Azure Sentinel (SIEM/SOAR) | GuardDuty + Security Hub/Lambda | Chronicle + Security Command Center | Azure SOAR built-in vs. AWS detection | Azure analytics            | Azure $2.60/GB                 | Azure playbook automation      |
+
+## Narrative Analysis
+Overall, this comparison highlights Azure's strengths in tight integration and hybrid support, making it ideal for environments like the SecureCorp migration we studied, where unified tools streamline DevSecOps pipelines—from identity management to threat response. AWS stands out for its scalable, modular approach with usage-based pricing that can be economical at high volumes but might require more setup for cohesive workflows. GCP emphasizes AI and analytics, offering advantages in data-heavy scenarios with simpler configurations, though it may lag in built-in SOAR compared to Azure. Based on course discussions on shared responsibility and tools like KQL for hunting, I'd lean toward Azure for Microsoft-aligned enterprises, but AWS or GCP could be better for cost-sensitive or AI-focused needs—ultimately, the choice depends on your existing ecosystem and specific compliance requirements, as seen in real-world analyses from Sysdig and Varonis in 2024
