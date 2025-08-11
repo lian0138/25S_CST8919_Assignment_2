@@ -1,6 +1,6 @@
 # CST8919 – DevOps Security and Compliance: Cloud Service Alternatives Report
 
-## Azure Active Directory (SSO, IAM)
+## 1. Azure Active Directory (SSO, IAM)
 
 Azure Active Directory (Microsoft Entra ID) is a cloud-based identity and access management service providing single sign-on (SSO), multi-factor authentication (MFA), and role-based access control (RBAC) in hybrid environments. The AWS equivalent combines IAM for resource permissions and Cognito for user authentication and sign-on. The GCP equivalent pairs IAM for permissions with Cloud Identity for workforce SSO and federation.
 
@@ -12,7 +12,7 @@ Azure Active Directory (Microsoft Entra ID) is a cloud-based identity and access
 
 In summary, Azure AD excels in hybrid and enterprise SSO scenarios with strong Defender ties, while AWS offers modular flexibility and GCP emphasizes simplicity; for DevSecOps, Azure's seamless pipeline integration makes it preferable for Microsoft-centric ecosystems, though AWS may be more cost-effective for high-scale user management based on 2024 pricing analyses from Jit.
 
-## Azure Monitor & Log Analytics
+## 2. Azure Monitor & Log Analytics
 Azure Monitor is a comprehensive service for collecting telemetry data, with Log Analytics providing KQL-based querying for logs and insights. The AWS equivalent is CloudWatch, which handles metrics, alarms, and log management. The GCP equivalent is Operations Suite (formerly Stackdriver), offering AI-driven logging, monitoring, and operations.
 
 ### Comparison Details
@@ -23,7 +23,7 @@ Azure Monitor is a comprehensive service for collecting telemetry data, with Log
 
 In summary, Azure's KQL enables powerful threat analysis, AWS shines in real-time alarms, and GCP leverages AI for insights; Azure's hybrid monitoring and DevSecOps compatibility make it ideal for complex environments, potentially more economical for large logs via reservations as per 2024 Sysdig reports.
 
-## Azure Policy
+## 3. Azure Policy
 Azure Policy is a governance tool that enforces and audits compliance rules across cloud resources to prevent misconfigurations. The AWS equivalent combines Organizations with Service Control Policies (SCPs) and Config for account management and rule tracking. The GCP equivalent is Organization Policy Service, which applies constraints across projects and folders.
 
 ### Comparison Details
@@ -34,7 +34,7 @@ Azure Policy is a governance tool that enforces and audits compliance rules acro
 
 In summary, Azure provides granular remediation for compliance, AWS emphasizes ongoing monitoring, and GCP offers straightforward org-wide constraints; Azure's no-cost model and strong DevSecOps integration suit governance-heavy setups, as highlighted in 2024 Pluralsight governance comparisons.
 
-## Defender for Cloud
+## 4. Defender for Cloud
 Defender for Cloud is a Cloud-Native Application Protection Platform (CNAPP) focused on security posture management (CSPM), workload protection (CWPP), and DevSecOps. The AWS equivalent is Security Hub combined with GuardDuty for threat detection and Inspector for vulnerability scanning. The GCP equivalent is Security Command Center, which centralizes asset inventory, threats, and posture insights.
 
 ### Comparison Details
@@ -45,7 +45,7 @@ Defender for Cloud is a Cloud-Native Application Protection Platform (CNAPP) foc
 
 In summary, Azure's unified multi-cloud CNAPP leads in posture management, AWS in threat intelligence, and GCP in asset-based insights; Azure's tiered pricing and DevSecOps tools make it versatile for hybrids, updated for 2024 compliance from Google Cloud resources.
 
-## Azure Sentinel (SIEM/SOAR)
+## 5. Azure Sentinel (SIEM/SOAR)
 Azure Sentinel is a cloud-native SIEM and SOAR solution for threat detection, investigation, and automated responses using AI. The AWS equivalent combines GuardDuty for threat detection, Security Hub for aggregation, and Lambda for automation. The GCP equivalent pairs Chronicle for scalable SIEM with Security Command Center for insights.
 
 ### Comparison Details
